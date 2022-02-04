@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Yash Patel" />
+    <link rel="stylesheet" href="./css/docs.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <title>Documentation</title>
+    <script src="js/redirection.js"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header-doc class="header"></header-doc>
+
+      <!-- <sidebar class="sidebar"></sidebar> -->
+      <div class="sidebar-main">
+        <div class="pos sidebar shadow-bottom" id="my-side-bar">
+          <div class="nav-heading nav-opening-button">
+            <h2 class="nav-heading_title">Components</h2>
+            <span class="sidebar-arrow"
+              ><i class="h5 fas fa-chevron-down"></i
+            ></span>
+            <!-- <span class="material-icons sidebar-arrow"> expand_more </span> -->
+          </div>
+          <ul class="nav-links">
+            <li class="nav-link_item"><a href="#alert">Alert</a></li>
+            <li class="nav-link_item"><a href="#avatar">Avatar</a></li>
+            <li class="nav-link_item"><a href="#badge">Badge</a></li>
+            <li class="nav-link_item"><a href="#button-com">Button</a></li>
+            <li class="nav-link_item"><a href="#card">Card</a></li>
+            <li class="nav-link_item"><a href="#image-com">Image</a></li>
+            <li class="nav-link_item"><a href="#input-com">Input</a></li>
+            <li class="nav-link_item"><a href="#chip">Chip</a></li>
+            <li class="nav-link_item"><a href="#ṛating">Rating</a></li>
+            <li class="nav-link_item"><a href="#grid">Grid Simplified</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="components">
+        <alert id="alert"></alert>
+        <avatar id="avatar"></avatar>
+        <badge id="badge"></badge>
+        <button-com id="button-com"></button-com>
+        <card id="card"></card>
+        <image-com id="image-com"></image-com>
+        <input-com id="input-com"></input-com>
+        <chip id="chip"></chip>
+        <rating id="rating"></rating>
+        <grid id="grid"></grid>
+        <!-- <typography id="typography"></typography> -->
+      </div>
+      <footer-doc></footer-doc>
+    </div>
+
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/chip.js"></script>
+    <!-- <script src="./js/header.js"></script> -->
+  </body>
+  <!-- <script src="/js/sidebar.js"></script> -->
+</html>
