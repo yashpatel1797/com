@@ -10,7 +10,7 @@ let inputValue = document.querySelector("#inputChip");
 // c.addEventListener("click", function() {
 //     c.style.display = 'none';
 // });
-
+console.log(c, inputValue);
 for (let i = 0; i < c.length; i++) {
     c[i].addEventListener("click", function() {
       console.log("close");
