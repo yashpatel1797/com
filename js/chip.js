@@ -1,7 +1,7 @@
 
 // const chipElement = document.querySelector('#chip');
-window.addEventListener("load", runChip);
-function runChip(){
+// window.addEventListener("load", runChip);
+// function runChip(){
   console.log("function loaded");
 const c = document.getElementsByClassName("btn-close");
 let inputValue = document.querySelector("#inputChip");
@@ -81,4 +81,4 @@ function getDragAfterElement(container, y) {
     }
   }, { offset: Number.NEGATIVE_INFINITY }).element
 }
-}
+// }
