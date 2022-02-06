@@ -1,5 +1,6 @@
 .components {
   margin: 5rem;
+  display: block;
 }
 .grid-container {
   display: grid;
@@ -49,16 +50,17 @@ html {
   }
 
   .grid-container {
-    width: 100%;
+    /* width: 100%;
     grid-template-columns: 1fr;
-    /* grid-template-areas:
+    grid-template-areas:
       "header"
       "sidebar"
       "components"; */
+    display: block;
   }
-  body {
+  /* body {
     width: 100vw;
-  }
+  } */
 }
 /* h1 {
   font-size: 3rem;

@@ -45,7 +45,7 @@
     height: 3.5rem;
     position: fixed;
     top: 0;
-    width: -webkit-fill-available;
+    width: 100vw;
     z-index: 10;
     background-color: var(--color-grey-light-4);
   }
