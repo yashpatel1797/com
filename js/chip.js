@@ -41,9 +41,10 @@ for (let i = 0; i < c.length; i++) {
 
 // drag and drop
 // watch again to understan working - https://www.youtube.com/watch?v=jfYWwQrtzzY&ab_channel=WebDevSimplified
-const draggables = document.querySelectorAll('.draggable')
+const draggables = document.querySelectorAll('.draggable');
 // const containers = document.querySelectorAll('.container')
-const container = document.querySelector('.drag-drop')
+const container = document.querySelector('.drag-drop');
+console.log(draggables, container);
 draggables.forEach(draggable => {
   draggable.addEventListener('dragstart', () => {
     draggable.classList.add('dragging')
