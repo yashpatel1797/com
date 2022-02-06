@@ -19,25 +19,25 @@ for (let i = 0; i < c.length; i++) {
     });}
 
 
-// function deleteChip(e){
-//   e.target.parentElement.remove();
-// }
-// function addChip(a){
-//   console.log("hello");
-//   let newDiv = document.createElement("div");
-//   newDiv.innerHTML = `${a.target.value}
-//   <span class="material-icons btn-close"> close </span>`
-//   newDiv.classList.add("chip-content");
-//   newDiv.classList.add("chip");
-//   newDiv.lastChild.addEventListener("click", deleteChip);
-//   let inputContainer = document.querySelector(".inputContainer");
-//   inputContainer.appendChild(newDiv);
-//   inputValue.value = "";
-// }
+function deleteChip(e){
+  e.target.parentElement.remove();
+}
+function addChip(a){
+  console.log("hello");
+  let newDiv = document.createElement("div");
+  newDiv.innerHTML = `${a.target.value}
+  <span class="material-icons btn-close"> close </span>`
+  newDiv.classList.add("chip-content");
+  newDiv.classList.add("chip");
+  newDiv.lastChild.addEventListener("click", deleteChip);
+  let inputContainer = document.querySelector(".inputContainer");
+  inputContainer.appendChild(newDiv);
+  inputValue.value = "";
+}
 // function hello(){
 //   console.log("hello2");
 // }
-// inputValue.addEventListener("change", addChip);
+inputValue.addEventListener("change", addChip);
 
 // drag and drop
 // watch again to understan working - https://www.youtube.com/watch?v=jfYWwQrtzzY&ab_channel=WebDevSimplified

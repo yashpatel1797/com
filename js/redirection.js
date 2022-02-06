@@ -48,13 +48,13 @@ fetch("./components/Avatar/avatar.html")
   .then(data => {
     document.querySelector("input-com").innerHTML = data;
   });
-  fetch("./components/Chip/chip.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("chip").innerHTML = data;
-  });
+  // fetch("./components/Chip/chip.html")
+  // .then(response => {
+  //   return response.text()
+  // })
+  // .then(data => {
+  //   document.querySelector("chip").innerHTML = data;
+  // });
   fetch("./components/Rating/rating.html")
   .then(response => {
     return response.text()
