@@ -1,6 +1,6 @@
 const mySideBar = document.querySelector('#my-side-bar');
 const sideBarButton = document.querySelector('.nav-opening-button');
-const sideBarNavLinks = document.querySelectorAll('.nav-link_item');
+const sideBarNavLinks = document.querySelectorAll('.nav-link-item');
 
 const arrayOfClickableItemsToToggleSideBar = [
 	sideBarButton,
@@ -12,3 +12,10 @@ arrayOfClickableItemsToToggleSideBar.forEach((button) => {
 	});
 });
 
+sideBarNavLinks.forEach(item => {
+	item.addEventListener("click", ()=> {
+		const currentActive = document.querySelectorAll(".active");
+		currentActive[0].classList.remove("active");
+		item.classList.add("active");
+	})
+})

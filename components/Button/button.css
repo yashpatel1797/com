@@ -1,5 +1,6 @@
 .btn-solid {
   background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
   color: var(--color-white);
 }
 .center {
@@ -31,7 +32,7 @@
 .btn-icon {
   display: flex;
 }
-.btn-icon_center {
+.btn-icon-center {
   display: flex;
   align-items: center;
   justify-content: center;

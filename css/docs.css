@@ -50,18 +50,17 @@ html {
   }
 
   .grid-container {
-    /* width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "sidebar"
-      "components"; */
     display: block;
   }
-  /* body {
-    width: 100vw;
-  } */
 }
-/* h1 {
-  font-size: 3rem;
-} */
+
+#reset-alert,
+#toast-demo,
+#modal-demo {
+  display: none;
+}
+.top-corner {
+  position: fixed;
+  top: 10rem;
+  right: 1rem;
+}

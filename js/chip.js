@@ -1,22 +1,11 @@
-
-// const chipElement = document.querySelector('#chip');
-// window.addEventListener("load", runChip);
-// function runChip(){
-  console.log("function loaded");
-const c = document.getElementsByClassName("btn-close");
+const close = document.getElementsByClassName("btn-close");
 let inputValue = document.querySelector("#inputChip");
-// let inputValue = document.querySelector('#chip');
-// console.log("ho")
-// c.addEventListener("click", function() {
-//     c.style.display = 'none';
-// });
-console.log(c, inputValue);
+
 for (let i = 0; i < c.length; i++) {
-    c[i].addEventListener("click", function() {
-      console.log("close");
+    close[i].addEventListener("click", function() {
       this.parentElement.style.display = 'none';
-      // c[i].style.display='none';
-    });}
+    });
+}
 
 
 function deleteChip(e){
@@ -34,17 +23,12 @@ function addChip(a){
   inputContainer.appendChild(newDiv);
   inputValue.value = "";
 }
-// function hello(){
-//   console.log("hello2");
-// }
 inputValue.addEventListener("change", addChip);
 
-// drag and drop
-// watch again to understan working - https://www.youtube.com/watch?v=jfYWwQrtzzY&ab_channel=WebDevSimplified
-const draggables = document.querySelectorAll('.draggable');
-// const containers = document.querySelectorAll('.container')
-const container = document.querySelector('.drag-drop');
-console.log(draggables, container);
+const draggables = document.querySelectorAll('.draggable')
+
+const container = document.querySelector('.drag-drop')
+
 draggables.forEach(draggable => {
   draggable.addEventListener('dragstart', () => {
     draggable.classList.add('dragging')
@@ -54,19 +38,16 @@ draggables.forEach(draggable => {
     draggable.classList.remove('dragging')
   })
 })
-
-// container.forEach(container => {
-  container.addEventListener('dragover', e => {
-    e.preventDefault()
-    const afterElement = getDragAfterElement(container, e.clientY)
-    const draggable = document.querySelector('.dragging')
-    if (afterElement == null) {
-      container.appendChild(draggable)
-    } else {
-      container.insertBefore(draggable, afterElement)
-    }
-  })
-// })
+container.addEventListener('dragover', e => {
+  e.preventDefault()
+  const afterElement = getDragAfterElement(container, e.clientY)
+  const draggable = document.querySelector('.dragging')
+  if (afterElement == null) {
+    container.appendChild(draggable)
+  } else {
+    container.insertBefore(draggable, afterElement)
+  }
+})
 
 function getDragAfterElement(container, y) {
   const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
@@ -81,4 +62,3 @@ function getDragAfterElement(container, y) {
     }
   }, { offset: Number.NEGATIVE_INFINITY }).element
 }
-// }

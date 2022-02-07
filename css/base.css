@@ -22,7 +22,7 @@
   --color-bg-alert-danger: #fcc5c5;
   --color-bg-alert-warning: #ffe7c5;
   --color-text-overlay: #ffffffa8;
-
+  --color-modal-bg: #00000080;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --line: 1px solid var(--color-grey-light-2);
