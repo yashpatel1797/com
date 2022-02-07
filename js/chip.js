@@ -1,7 +1,7 @@
 const close = document.getElementsByClassName("btn-close");
 let inputValue = document.querySelector("#inputChip");
 
-for (let i = 0; i < c.length; i++) {
+for (let i = 0; i < close.length; i++) {
     close[i].addEventListener("click", function() {
       this.parentElement.style.display = 'none';
     });
